@@ -1,0 +1,20 @@
+$primary-color: #5e2b97;
+$secondary-color: #e3c770;
+$font-stack: 'Cinzel', serif;
+
+body {
+  font-family: $font-stack;
+  background: #fdf6f0;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
