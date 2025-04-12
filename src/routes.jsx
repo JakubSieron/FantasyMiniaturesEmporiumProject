@@ -10,7 +10,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 export default function AppRoutes() {
   return (
-    <Router>
+   
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
@@ -26,6 +26,6 @@ export default function AppRoutes() {
           }
         />
       </Routes>
-    </Router>
+    
   );
 }

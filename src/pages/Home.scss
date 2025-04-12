@@ -1,0 +1,62 @@
+@import '../styles/main'; // optional if variables needed
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1610391422227-504b58c96f13') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+
+  .shop-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: $primary-color;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+}
+
+.featured {
+  padding: 40px 20px;
+  background: #fff;
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .product-card {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+.about-preview {
+  background: #eee;
+  padding: 40px 20px;
+  text-align: center;
+
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
