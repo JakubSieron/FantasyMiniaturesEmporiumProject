@@ -73,7 +73,38 @@
       color: #888;
       margin-bottom: 0.5rem;
     }
+    .category {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 0.25rem;
+    }
 
+    .price {
+      color: #5e2b97;
+      font-weight: bold;
+      margin: 0.25rem 0;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+      min-height: 50px;
+    }
+
+    .add-to-cart {
+      margin-bottom: 0.5rem;
+      background: #5e2b97;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: #3e1b6f;
+      }
+    }
     .details-link {
       display: inline-block;
       margin-top: 0.5rem;
