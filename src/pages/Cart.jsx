@@ -50,7 +50,20 @@ export default function Cart() {
         <div className="cart-items">
           {cart.map(item => (
             <div key={item.id} className="cart-item">
-              <img src={item.image} alt={item.name} />
+              {/* ✅ Fix: require image from filename stored in item.image */}
+              <img
+                 src={
+                  (() => {
+                    try {
+                      return require(`../assets/images/${item.image}`);
+                    } catch {
+                      return require(`../assets/images/placeholder.jpg`);
+                       // or ''
+                    }
+                  })()
+                }
+                alt={item.name}
+              />
               <div>
                 <h3>{item.name}</h3>
                 <p>${item.price.toFixed(2)} each</p>
@@ -104,3 +117,4 @@ export default function Cart() {
     </div>
   );
 }
+

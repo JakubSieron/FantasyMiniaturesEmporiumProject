@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "name": "Dwarf Battalion",
+      "category": "miniatures",
+      "image": "bat1.jpg",
+      "price": 190.99,
+      "description": "Starter set for Mountain Holds.",
+      "stock": 5
+    },
+    {
+      "id": 2,
+      "name": "Elven Battalion",
+      "category": "miniatures",
+      "image": "bat2.jpg",
+      "price": 190.99,
+      "description": "Starter set for High Elves.",
+      "stock": 5
+    },
+    {
+      "id": 3,
+      "name": "Arcane Ruins",
+      "category": "terrain",
+      "image": "ter1.jpg",
+      "price": 59.99,
+      "description": "Add atmosphere to your battles with rocky ruins.",
+      "stock": 5
+    },
+    {
+      "id": 4,
+      "name": "Basic Paints Pack",
+      "category": "paints",
+      "image": "pset2.jpg",
+      "price": 39.99,
+      "description": "Your essential starter set for miniature painting.",
+      "stock": 5
+    },
+    {
+      "id": 5,
+      "name": "Bretonia Starter Set",
+      "category": "miniatures",
+      "image": "bat3.jpg",
+      "price": 229.99,
+      "description": "Starter set for Bretonian Kingdom.",
+      "stock": 5
+    },
+    {
+      "id": 6,
+      "name": "Advanced Paint Set",
+      "category": "paints",
+      "image": "pset1.jpg",
+      "price": 39.99,
+      "description": "Extended palette of paint with terrain accessories.",
+      "stock": 5
+    },
+    {
+      "id": 7,
+      "name": "Advanced Terrain Set",
+      "category": "paints",
+      "image": "pset3.jpg",
+      "price": 39.99,
+      "description": "Terrain accessories for various environments.",
+      "stock": 5
+    },
+    {
+      "id": 8,
+      "name": "Hills",
+      "category": "terrain",
+      "image": "ter2.jpg",
+      "price": 69.99,
+      "description": "It is always better to have a high ground.",
+      "stock": 5
+    },
+    {
+      "id": 9,
+      "name": "Fortified Manor",
+      "category": "terrain",
+      "image": "ter3.jpg",
+      "price": 89.99,
+      "description": "Fortified manor to improve your defense.",
+      "stock": 5
+    },
+    {
+      "id": 10,
+      "name": "Chaos Warriors",
+      "category": "miniatures",
+      "image": "bat4.jpg",
+      "price": 29.99,
+      "description": "A fearsome warriors for your horde.",
+      "stock": 5
+    },
+    {
+      "id": 11,
+      "name": "Dwarf Thunderers",
+      "category": "miniatures",
+      "image": "bat5.jpg",
+      "price": 29.99,
+      "description": "Do not take a knife to a gun fight.",
+      "stock": 5
+    },
+    {
+      "id": 12,
+      "name": "Hexbane Witch Hunters Set",
+      "category": "miniatures",
+      "image": "bat7.jpg",
+      "price": 19.99,
+      "description": "No one expected Spanish inquisition.",
+      "stock": 5
+    },
+    {
+      "id": 13,
+      "name": "3 Sets",
+      "category": "miniatures",
+      "image": "bat8.jpg",
+      "price": 49.99,
+      "description": "Three warbands set.",
+      "stock": 5
+    },
+    {
+      "id": 14,
+      "name": "Kharadron Overlords",
+      "category": "miniatures",
+      "image": "bat6.jpg",
+      "price": 39.99,
+      "description": "Simply flying dwarfs.",
+      "stock": 5
+    }
+  ]
+  
