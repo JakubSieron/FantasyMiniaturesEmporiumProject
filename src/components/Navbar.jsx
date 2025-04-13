@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/images/logoEmp.png';
 import './Navbar.scss';
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Fantasy Miniatures</Link>
+        <Link to="/"><img src={logo} alt="Fantasy Miniatures Emporium" className="logo-img" /></Link>
       </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>

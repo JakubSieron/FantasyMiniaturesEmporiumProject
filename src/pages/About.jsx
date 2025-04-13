@@ -1,5 +1,6 @@
 import React from 'react';
-import './About.scss'; 
+import './About.scss';
+import logo from '../assets/images/logoEmp.png'; 
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
           of hobbyists bring their fantasy worlds to life.
         </p>
         <img
-          src="/logo192.png" // Or your real logo path
+          src={logo}
           alt="Fantasy Miniatures Logo"
           className="company-logo"
         />
@@ -31,16 +32,12 @@ export default function About() {
         <h2>Meet the Team</h2>
         <ul className="team-members">
           <li>
-            <h3>Elena Shadowborn</h3>
+            <h3>Edem Nedipov</h3>
             <p>Founder & Miniature Designer</p>
           </li>
           <li>
-            <h3>Darius Ironforge</h3>
+            <h3>Jakub Sieron</h3>
             <p>Paint Specialist & Community Manager</p>
-          </li>
-          <li>
-            <h3>Kaelin Stormbrush</h3>
-            <p>Customer Support & Logistics</p>
           </li>
         </ul>
       </section>

@@ -8,12 +8,17 @@
     padding: 16px 24px;
   
     .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-  
-      a {
-        color: white;
-        text-decoration: none;
+      margin-right: 1rem;
+    
+      img.logo-img {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        transition: transform 0.2s ease;
+    
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   
