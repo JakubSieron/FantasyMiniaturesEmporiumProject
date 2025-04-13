@@ -98,6 +98,9 @@ export default function Contact() {
       const fullPhone = `${formData.dialingCode} ${formData.phone}`;
       const fullData = { ...formData, phone: fullPhone };
 
+      const saved = JSON.parse(localStorage.getItem('contactMessages')) || [];
+      localStorage.setItem('contactMessages', JSON.stringify([...saved, fullData])); 
+
       console.log('Submitted Form:', fullData);
 
       setFormData({
