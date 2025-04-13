@@ -1,3 +1,5 @@
+@import '../styles/main';
+
 .cart-page {
     padding: 2rem;
     font-family: 'Cinzel', serif;
@@ -52,6 +54,38 @@
           background: #872626;
         }
       }
+      .quantity-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+      
+        button {
+          width: 30px;
+          height: 30px;
+          font-size: 1.1rem;
+          background: #a83232;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          cursor: pointer;
+         
+          display: flex;              
+          align-items: center;        
+          justify-content: center;     
+      
+          padding: 0;
+          line-height: 1;
+          &:hover {
+            background: #872626;
+          }
+        }
+      
+        span {
+          font-weight: bold;
+          min-width: 24px;
+          text-align: center;
+        }
+      }
     }
   
     .cart-total {
@@ -61,7 +95,7 @@
       text-align: right;
       color: #5e2b97;
     }
-  
+    
     p {
       font-size: 1rem;
     }

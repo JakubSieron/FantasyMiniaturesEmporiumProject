@@ -10,6 +10,19 @@ export default function Cart() {
     if (stored) setCart(JSON.parse(stored));
   }, []);
 
+  const updateQuantity = (id, amount) => {
+    const updated = cart
+      .map(item =>
+        item.id === id
+          ? { ...item, quantity: item.quantity + amount }
+          : item
+      )
+      .filter(item => item.quantity > 0); 
+
+    setCart(updated);
+    localStorage.setItem('cart', JSON.stringify(updated));
+  };
+
   const removeItem = (id) => {
     const updated = cart.filter(item => item.id !== id);
     setCart(updated);
@@ -30,7 +43,12 @@ export default function Cart() {
               <img src={item.image} alt={item.name} />
               <div>
                 <h3>{item.name}</h3>
-                <p>${item.price.toFixed(2)} × {item.quantity}</p>
+                <p>${item.price.toFixed(2)} each</p>
+                <div className="quantity-buttons">
+                  <button onClick={() => updateQuantity(item.id, -1)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => updateQuantity(item.id, 1)}>+</button>
+                </div>
                 <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
                 <button onClick={() => removeItem(item.id)}>Remove</button>
               </div>
