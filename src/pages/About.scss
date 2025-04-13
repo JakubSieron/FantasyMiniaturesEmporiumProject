@@ -1,0 +1,27 @@
+.about-page {
+    padding: 2rem;
+    line-height: 1.6;
+  
+    .company-logo {
+      width: 120px;
+      margin: 1rem 0;
+    }
+  
+    .team-members {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .timeline ul {
+      padding-left: 1rem;
+    }
+  
+    h1, h2 {
+      color: #5e2b97;
+    }
+  }
+  
