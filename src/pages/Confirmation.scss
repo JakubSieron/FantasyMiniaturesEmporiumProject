@@ -1,0 +1,35 @@
+@import '../styles/main';
+
+.confirmation-page {
+    text-align: center;
+    padding: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+  
+    h1 {
+      color: #5e2b97;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+  
+    .back-btn {
+      background: #5e2b97;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s ease;
+  
+      &:hover {
+        background: #3e1b6f;
+      }
+    }
+  }
+  

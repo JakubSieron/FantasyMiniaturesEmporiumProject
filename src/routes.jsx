@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
 import Cart from './pages/Cart';
 import Login from './pages/Login';
+import Confirmation from './pages/Confirmation';
 import ProtectedRoute from './components/ProtectedRoute';
 
 export default function AppRoutes() {
@@ -21,6 +22,7 @@ export default function AppRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/confirmation" element={<Confirmation />} />
         <Route
           path="/dashboard"
           element={

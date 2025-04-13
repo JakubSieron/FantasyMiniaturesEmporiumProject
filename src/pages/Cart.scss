@@ -95,7 +95,22 @@
       text-align: right;
       color: #5e2b97;
     }
-    
+    .finish-btn {
+        margin-top: 1rem;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #5e2b97;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      
+        &:hover {
+          background-color: #3e1b6f;
+        }
+      }
     p {
       font-size: 1rem;
     }

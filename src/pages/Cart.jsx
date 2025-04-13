@@ -1,9 +1,13 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Modal from '../components/Modal';
 import './Cart.scss';
 
 export default function Cart() {
   const [cart, setCart] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const stored = localStorage.getItem('cart');
@@ -17,8 +21,7 @@ export default function Cart() {
           ? { ...item, quantity: item.quantity + amount }
           : item
       )
-      .filter(item => item.quantity > 0); 
-
+      .filter(item => item.quantity > 0);
     setCart(updated);
     localStorage.setItem('cart', JSON.stringify(updated));
   };
@@ -27,6 +30,13 @@ export default function Cart() {
     const updated = cart.filter(item => item.id !== id);
     setCart(updated);
     localStorage.setItem('cart', JSON.stringify(updated));
+  };
+
+  const handleConfirm = () => {
+    localStorage.removeItem('cart');
+    setCart([]);
+    setShowModal(false);
+    navigate('/confirmation');
   };
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -54,8 +64,42 @@ export default function Cart() {
               </div>
             </div>
           ))}
+
           <h2 className="cart-total">Total: ${total.toFixed(2)}</h2>
+
+          <button className="finish-btn" onClick={() => setShowModal(true)}>
+            Checkout
+          </button>
         </div>
+      )}
+
+      {showModal && (
+        <Modal title="Confirm Your Order" onClose={() => setShowModal(false)}>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            {cart.map(item => (
+              <li key={item.id}>
+                {item.name} × {item.quantity} → ${(item.price * item.quantity).toFixed(2)}
+              </li>
+            ))}
+          </ul>
+          <p style={{ fontWeight: 'bold', marginTop: '1rem' }}>
+            Total: ${total.toFixed(2)}
+          </p>
+          <button
+            onClick={handleConfirm}
+            style={{
+              marginTop: '1rem',
+              padding: '0.5rem 1rem',
+              background: '#5e2b97',
+              color: 'white',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+            }}
+          >
+            Confirm Purchase
+          </button>
+        </Modal>
       )}
     </div>
   );
