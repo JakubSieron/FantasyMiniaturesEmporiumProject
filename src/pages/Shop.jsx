@@ -40,7 +40,7 @@ export default function Shop() {
 
       {/* Category Filter */}
       <div className="filter-buttons">
-        {['all', 'miniatures', 'terrain', 'paints'].map((cat) => (
+        {['all', 'miniatures', 'books', 'paints'].map((cat) => (
           <button
             key={cat}
             onClick={() => setCategory(cat)}
